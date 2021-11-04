@@ -1,0 +1,230 @@
+
+$colorfondo:#f8b73f;
+$tipografia-titulos: 'Arvo';
+$tipografia-general: 'Montserrat';
+$widthmax:300px;
+$tablet: 600px;
+
+@import 'home';
+@import 'footer';
+@import 'somos';
+@import 'pedido';
+@import 'variedades';
+@import 'contacto';
+
+
+body {
+    font-family: $tipografia-general;
+    $border:0px;
+    overflow-x: hidden; 
+}
+html{
+	scroll-behavior: smooth;
+}
+
+
+
+
+/*operaciones*/
+div{
+    &.operaciones {
+        width:($widthmax) * 2;
+        background-color: antiquewhite;
+        p {
+            color: #f8b73f;
+        }        
+    }
+}
+/* CONDICIONALES*/
+$colortitulo: #000;
+.condiciones {
+    @if $colortitulo == #000 {
+        color:antiquewhite;
+        background-color: #ff5741;
+        margin: 0px ;
+        text-align: center;
+        padding: 0px 0px;
+        font-family: $tipografia-titulos;
+    } @else {
+        color: #f8b73f;
+    }     
+}
+/* bucles*/
+@for $i from 1 to 6 {
+    h#{$i} {
+        font-size: $i * 20px;
+    }   
+}
+@for $i from 1 to 4 {
+    .img-#{$i} {
+        width: $i * 200px;
+    }
+    
+}
+@each $animal in puma, leon, tigre {
+
+    .#{$animal}-icon {
+        background-image: url("/img/#{animal}.jpg");
+    }    
+}
+@each $background in red, green, blue {
+  .bg-#{$background} {
+      background-color: $background;
+  } 
+}
+
+/*mapa*/
+$red-social: (
+    yub:#222, 
+    fb:#888,
+    in:#555
+    );
+
+.redes{
+    vertical-align: middle;
+    img {
+        width: 40px;       
+    }
+}
+@each $nombre, $valor in $red-social {
+ .icon-#{$nombre}{
+     color: $valor;
+     border: 1px solid #000;
+     height: 50px;
+     border-radius: 50px;
+     padding: 0px 5px;
+     vertical-align: middle;
+     display: inline;
+
+     &:hover{
+         background-color: rgb(0, 0, 0);
+         color: rgb(255, 217, 0);
+     }
+ }    
+}
+/*extend*/
+.img-full{
+    width: 100%;
+    height: 100px;
+}
+.img-full--dark{
+    @extend .img-full;
+    background-color: black;
+}
+
+/*MIXINS*/
+@mixin btn {
+    display: block;
+    padding: 0px;
+    border: 1px solid $colorfondo;    
+    }    
+.btn--danger {
+    @include btn;
+    background-color: $colortitulo;
+}
+@mixin btn ($col, $bg) {
+    display:inline-block;
+    width: 50%;
+    padding: 20px;
+    text-decoration: none;
+    color: $col;
+    background-color: $bg;
+    border: 1px solid $colorfondo; 
+    text-align: center;
+    font-family: $tipografia-titulos;
+    &:hover {
+        text-decoration: none;
+        list-style: none;
+        color: #888;
+    }     
+}
+
+.btn--danger {
+    @include btn ( white, black);
+}
+.btn--infor {
+    @include btn ( white,#fca400);
+}
+
+@media (min-width: $tablet) { 
+    width: $widthmax * 2 ;
+    
+}
+
+/**filtros*/
+.tituloFiltros{
+    text-align: left;
+    margin-top: 15px;
+    color: #f8b73f;
+    font-family: 'Arvo', serif;
+    font-style: normal;
+    font-size: 20px;
+}
+.list-group{
+    padding: none!important;
+    margin-top: 20px;
+   
+    .list-group-item{
+        margin: 0px;
+        background-color:antiquewhite!important;       
+        padding: 10px;
+        font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight:100;
+	font-size: 0.8rem;
+	text-decoration: none; 
+    border: 1px solid #f8b73f;
+     
+      
+      input{
+        padding: 20px;
+          
+      }
+    }
+}
+.input-group .rounded{
+    input{ background-color: #f8b73f;
+        .form-control .rounded{
+            background-color: #f8b73f;}
+        }
+    .span .input-group-text {
+        
+        .fas .fa-search{
+            background-color: #f8b73f!important;
+            color: aqua;
+        }
+    }
+
+}
+
+.botonCarritoCompra {
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    top: 50%;
+    right: 0px;
+    background-color:#00382b;
+    border-top-left-radius:30px ;
+    border-bottom-left-radius: 30px;
+    transition: 1s;
+    z-index: 5;
+}
+
+.botonCarritoCompra:hover {
+    width: 100px;
+    transition: 1s;
+    
+}
+
+.botonCarritoCompra img {
+    margin: auto;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.botonCarritoCompra img:hover {
+    transition: 1s;
+       margin-left: 20px ;
+}

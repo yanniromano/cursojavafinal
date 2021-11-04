@@ -1,0 +1,51 @@
+[
+  {
+    "comerId": 1,
+    "id": 1,
+    "ciudad": "San Francisco",
+    "nombre": "La Tranquera",
+    "direccion": "Iturraspe 2589, San Francisco, Córdoba"
+  },
+  {
+    "comerId": 1,
+    "id": 1,
+    "ciudad": "San Francisco",
+    "nombre": "Don Chitin Sabores De Campo",
+    "direccion": "Iturraspe 1885, San Francisco, Córdoba"
+  },
+  {
+    "comerId": 1,
+    "id": 3,
+    "ciudad": "San Francisco",
+    "nombre": "Los Mendocinos",
+    "direccion": "1 de Mayo 297, San Francisco, Córdoba"
+  },
+  {
+    "comerId": 1,
+    "id": 4,
+    "ciudad": "San Francisco",
+    "nombre": "Yuri universo cervecero",
+    "direccion": "25 de Mayo 2570, San Francisco, Córdoba"
+  },
+  {
+    "comerId": 1,
+    "id": 5,
+    "ciudad": "San Francisco",
+    "nombre": "1516 bar & beer",
+    "direccion": "Blvd. Roca 2898, San Francisco, Córdoba"
+  },
+  {
+    "comerId": 2,
+    "id": 5,
+    "ciudad": "Córdoba",
+    "nombre": "Mosto Bebidas Córdoba",
+    "direccion": "Av. Sagrada Familia 1304, Córdoba"
+  },
+  {
+    "comerId": 2,
+    "id": 6,
+    "ciudad": "Córdoba",
+    "nombre": "Hoppers Cerveceria",
+    "direccion": "EST, Sta Rosa 916, X5000 X5000EST, Córdoba"
+  }
+]

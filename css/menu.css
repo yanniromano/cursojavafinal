@@ -1,0 +1,213 @@
+*{
+	margin: 0;
+	padding: 0;
+    text-decoration: none;
+	list-style-type: none;
+	box-sizing: border-box;
+}
+
+
+.header {
+    width: 100%;
+	background-color:#02221b;
+	z-index: 500000;
+	box-shadow: 0px 5px 30px rgba(63, 48, 0, 0.2);
+    position: fixed;  
+   
+}
+.flexmenus{
+    width:100% ;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;    
+}
+.logo {
+    width: 100px;
+    margin-left: 20px; 
+}
+.logo:hover {    
+    opacity: 0.8;
+    box-shadow: #1a1a36;    
+}
+
+.compra{
+    width: 100%;    
+    color:#fee8ce;    
+    background-color: #222222;
+    box-shadow: 0px 5px 30px rgba(63, 48, 0, 0.2);     
+}
+
+.compra .contenedorcompra{
+    width: 90%!important;
+    display:flex;
+    flex-direction: row;
+    text-align: right; 
+    flex-direction: row ;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 9px;
+}
+
+.compra .contenedorcompra a{
+    padding: 15px;
+    margin: 10px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight:100;
+	font-size: 0.8rem;
+	text-decoration: none; 
+    border-left: 1px solid #fff;
+}
+
+.compra .contenedorcompra a:hover{    
+    color: #f8b73f;  
+    border-left: 1px solid #f8b73f;
+}
+
+#check{
+    display: none;
+}
+
+.bar-btn {
+    font-size: 25px;
+    color:  #f8b73f;
+    cursor: pointer;
+    margin-right: 20px;
+    align-content: flex-end;
+    align-items: flex-end;
+}
+
+.nav-menu {   
+    width: 100%;
+   padding-left: 20px;
+   padding-right: 20px;
+    height: 0px;
+    background-color: #02221b;
+    text-align: left;
+    transition: all .5s;
+}
+.nav-menu li {
+    display: none;
+    width: 100%;
+    margin: 0px 0px;
+    padding-top: 20px;
+    transition: all .5s;    
+    list-style-type: none;
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight:900;
+	font-size: 2rem;
+	text-decoration: none;   
+    height: 80px;
+    border-bottom: 1px solid #fee8ce; 
+      
+
+ }
+ .nav-menu li:hover {
+    margin: 0px 0px;
+    padding-top: 20px;
+    background-color: #02221b;/*#00382b*/
+    border-bottom: 1px solid #fee8ce;     
+
+ }
+.nav-menu li a{
+     color: #fee8ce;
+	list-style-type: none;
+	text-decoration: none;    
+}
+.nav-menu li a:active, .nav-menu li a:hover {    
+    color:#094629;	
+    }
+    .activo {
+        color:#fee8ce;	
+           }
+#check{
+    /* display: none; */
+}
+#check:checked ~ .nav-menu {
+    height: 100vh;
+}
+#check:checked ~ .nav-menu li{
+    display: block;}
+
+@media screen and (min-width:1123px) {    
+
+    
+
+    .activo {
+        color: #51b586;	
+        border-bottom: 7px solid #f8b73f;     
+    }
+    .flexmenus{
+        width:80% ;
+        height: 80px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;        
+    }   
+    .logo{
+        margin-left: 0px;
+        margin-bottom: 10px;        
+    } 
+    .nav-menu {
+       height:80px;    
+       background-color: transparent; }
+
+    .bar-btn {
+        visibility: hidden;
+    }
+    .nav-menu {
+        width: 400px;
+        display: flex;        
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content:center;
+       justify-content:space-around ;
+       align-items: center;
+       margin: 0px;  
+    
+    }
+    .nav-menu li {
+    display: flex;
+    list-style-type: none;
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight:900;
+	font-size: 1rem;
+    padding-top: 25px;
+	text-decoration: none;    
+    width: auto;
+    margin: 20px 0px;
+    transition: all .5s;
+    list-style-type: none;
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	text-decoration: none;
+    border-bottom: none;  
+    }   
+     .nav-menu li:hover {
+        margin: 20px 0px;
+        padding-top: 25px;
+        background-color: transparent;
+        border-bottom:none;     
+    
+     }
+     .nav-menu li a{
+        color: #48bb78;
+       list-style-type: none;
+       text-decoration: none;    
+   }
+}
+
+.hidden {
+    visibility: hidden;
+    display: none;
+}

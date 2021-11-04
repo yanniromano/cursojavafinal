@@ -1,0 +1,123 @@
+/*SOMOS*/
+#somos {
+	height: auto;
+	width: 1200;
+	.containersomos {		
+		display: grid;		
+		background-color: #007b6a;
+		grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)) ;
+		.somos1 {			
+			background-color: #007b6a;
+			padding-bottom: 6rem;	
+			
+			.imgclase {
+				width: 40%;	
+			}
+			h1 {
+				font-family: 'Arvo', serif;
+				font-style: normal;
+				font-weight: bolder;
+				font-size: 4em;
+				text-align: left;
+				color: #00382b;
+				margin: 0px auto;
+				width: 400px;	
+				padding-top: 50px!important;			
+			}
+			p {
+				font-family: 'Montserrat', sans-serif;
+				font-style: normal;
+				font-weight: 500;
+				font-size:1em;
+				text-align: left;
+				color: #FDE8CD;
+				width: 400px;
+				line-height: 24px;
+				margin: 0px auto;
+			}
+		}
+		.somos2 {
+			background-color: #00382b;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			
+			h3 {
+				font-size: 3rem;
+				color: #FDE8CD;
+				font-family: 'Arvo', serif;
+				font-style: normal;
+				font-weight: bolder;
+				padding-top: 0%!important;				
+				text-align: left;
+				width: 80%;
+				line-height: 50px;
+				margin: 0px auto;
+			}
+		}
+		.somos3 {
+			overflow: hidden;
+			height:400px;;			
+			video {
+				width: 100%;				
+				background-position: top center;
+				background-color:#00382b;
+			}
+		}
+	}
+}
+@media screen  and (min-width:1024px){
+	#somos {		
+		.containersomos {		
+			.somos1 {					
+				h1 {
+					padding-top: 16rem;	
+										
+				}				
+			}
+			.somos2 {				
+				h3 {
+				padding-top: 20rem;				
+				}
+			}			
+		}
+	}
+}
+
+@media screen and (max-width:1450px) {
+	#somos {
+		height: auto;
+		width: 100%;
+		.containersomos {
+			.somos1 {			
+				background-color: #007b6a;
+				height:auto;
+				padding-bottom: 100px;
+				.imgclase {
+					width: 50%;	
+				}
+				h1 {					
+					padding-top: 10rem;
+					font-size: 4em;
+					width: 90%;
+					margin-left: auto;
+					margin-right: auto;
+					text-align: center;
+				}
+				p {
+					width: 90%;
+					line-height: 24px;
+					margin-left: auto;
+					margin-right: auto;
+					
+				}
+			}			
+			.somos3 {
+				display: none;
+			}
+			.somos2 {	
+				display: none;
+			}			
+		}
+	}
+}

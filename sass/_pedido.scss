@@ -1,0 +1,116 @@
+/*PEDIDO*/
+#pedido {
+	background-image: url(../img/fondo_somos-01.png);
+	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	
+	img {
+		padding-bottom: 10px;
+		.imgBanner {
+			padding-top: 100px;
+			max-width: 80%;
+			padding-bottom: 70px;
+		}			
+	}
+	
+	.flex {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		justify-content: space-around;
+		align-items: stretch;
+		align-items: center;		
+	}
+	.container {
+		max-width: 100%;
+		margin: auto;
+		padding-left: 0px;
+		padding-right: 0px;
+		text-align: center;
+		height: auto;		
+		h1 {
+			font-family: 'Arvo', serif;
+			font-style: normal;
+			font-weight: bolder;
+			font-size: 60px;
+			text-align: center;
+			color: #f8b73f;
+			width: 600px;
+			line-height: 50px;
+			padding-top: 100px;
+			margin: auto;
+		}
+		.box-model {
+			margin: auto;
+			margin-top: 800 px;
+			display: inline-block;
+     		padding: 50px 20px 50px 20px;
+			width: 33,333333%;
+			height: 250px;
+			&:hover {
+				border: none;
+				box-shadow: 0px 5px 30px rgba(63, 48, 0, 0.2);
+				}
+			}			
+			h2 {
+				font-family: 'Arvo', serif;
+				font-style: normal;
+				font-weight: bolder;
+				font-size: 60px;
+				text-align: center;
+				color: #fcfcfc;
+				&:hover {
+					color: #FDE8CD;
+				}
+			}
+			p {
+				font-family: 'Montserrat', sans-serif;
+				font-style: normal;
+				font-size: 15px;
+				text-align: center;
+				color: #ffffff;
+				&:hover {
+					color: #FDE8CD;
+				}
+			}
+			.colorone {
+				background-color: #00382b;
+				&:hover {
+					background-color: #02221b;
+					color: #FDE8CD;						
+				}
+			}
+			.colortwo {
+					background-color: #007b6a;
+					&:hover {
+						background-color: #0a4b42;
+						color: #FDE8CD;		
+				}
+			}				
+			.colorthree {
+					background-color: #dfaa42;
+					&:hover {
+					background-color: #ffaa00;
+						color: #FDE8CD;						
+						}
+			}
+		}	
+}
+
+@media screen and (max-width:767px) {	
+#pedido {
+	width: 100%;
+	.flex {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		justify-content:space-between;
+		align-items: stretch;
+		align-items: center;		
+	}	
+}
+}

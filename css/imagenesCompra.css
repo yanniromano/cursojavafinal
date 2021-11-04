@@ -1,0 +1,80 @@
+
+  .margin-top-25px{
+      margin-top: 25px;
+  }
+  .alto{
+      height: 500px;
+  }
+  .datosCompra {
+    font-family: 'Arvo', serif;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    text-align: center;		
+    color: #007b6a;
+}
+.Banner img{
+  width: 80%;
+  margin: auto;
+
+}
+
+@media screen and (max-width:767px) {
+  .Banner img{
+    width: 100%;
+    margin: auto;
+    padding-top: 50px;
+  
+  }
+}
+
+
+.img-container {
+    width: 200px;
+    height: 400px;
+    text-align: center;
+    margin: auto;
+    
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .img-container:before {
+    content: '';
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background: #000;
+    opacity: 0;    
+    transition: opacity .3s linear;   
+  }
+  
+  .img-container:hover:before { 
+    opacity: .15;
+  }
+  
+  .img-container p {
+    width: inherit;  
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 100%; 
+    transition: top .3s linear;
+  }
+  
+  .img-container:hover p {    
+    top: 40%;
+  }
+
+
+  
+.modalModificado {
+  font-family: 'Arvo' !important;
+  font-style: normal!important;
+  font-weight: bolder!important;
+  color: #f8b73f; 
+  display: flex!important;
+  justify-content: center!important;
+  align-items: center!important;
+}

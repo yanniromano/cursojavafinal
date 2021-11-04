@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aries | Cerveza Artesanal</title>
+    <meta name="description" content="Desarrollamos Cervezas artesanales, innovadoras y
+    creativas. Más de 10 años al lado de los Cerveceros. Todas las modalidades de pago. Envíos a todo el País.">
+    <meta name="keywords"
+        content="Cervecería, Cervecería artesanal, cervezas artesanales, venta de cerveza, ippa, honney, Cerveza, artesanal, córdoba, aries, argentina">
+    <link rel="stylesheet" href="css/stye.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <LINK rel="stylesheet" href="CSS/formWhatsapp.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/db27027f19.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="ico.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="ico.ico">
+</head>
+
+
+<body>
+    <div id="mensaje" class="mensaje">
+        <!-- Section preguntar edad -->
+        <main class="ingreso" id="ingreso">
+            <div class="emergente " id="nombreIngreso">
+                <div class="container ">
+                    <div class="row  justify-content-center align-items-center">
+                        <div class="col-md-12 ">
+                            <img src="img/LogoAriesIngreso.png" class="logoIntro" width="90%" id="logo">
+                            <hr class="my-4 no-padding">
+                            <div class="theme-switch-wrapper">
+                                <label class="theme-switch" for="checkbox">
+                                    <input type="checkbox" id="checkbox" class="change" />
+                                    <div class="slider round"></div>
+                                </label>
+                            </div>
+                            <p class="ingresotexto">Debes ser mayor de edad para poder visitar este sitio web <br>
+                                <img src="img/corte-01.png" width="50%">
+                            </p>
+                        </div>
+                        <form id="nombreIngreso">
+                            <div class="col-md-12 col-lg-12 col-sm-12 float-left ">
+                                <input type="text" id="nombredelUsuario" onKeyUp="dataBinding(); "
+                                    class="form-control-nombre" placeholder="Hola! Cómo te llamas?">
+
+                                <div class="col-md-12 col-lg-6 col-sm-12 float-left"><button type="submit"
+                                        class="enterButton" id="menor">Tengo menos de 18 años</button>
+                                </div>
+
+                                <div class="col-md-12 col-lg-6 col-sm-12 float-left"><button type="submit"
+                                        class=" enterButton" id="mayor">Soy mayor de edad</button></div>
+                        </form>
+                    </div>
+                </div>
+                <div id="alerta"></div>
+            </div>
+        </main>
+        <!-- Fin Section preguntar edad -->
+        <div class="intro">
+            <div class="intro-text">
+                <h1 class="hide">
+                    <span class="text">Estas por conocer</span>
+                </h1>
+                <h1 class="hide">
+                    <span class="text">una gran cerveza</span>
+                </h1>
+                <h1 class="hide">
+                    <span class="text">artesanal.</span>
+                </h1>
+            </div>
+        </div>
+    </div>
+    <!--  Menu -->
+    <header class="header">
+        <nav class="flexmenus">
+            <div>
+                <a href="index.html"> <img src="img/LogoAriesIngreso.png" alt="LogoAries" class="logo"></a>
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="bar-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="nav-menu">
+                <li> <a href="index.html" class="activo">Home</a></li>
+                <li> <a href="variedades.html">Comprá tu cerveza!</a></li>
+                <li> <a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--  Fin Menu -->
+
+    <!--  Baner principal -->
+    <main>
+        <a href="variedades.html" target="blank">
+            <div class="botonCarritoCompra"> <img src="img/compra-01.svg" alt="Whatsapp">
+            </div>
+        </a>
+        <section id="intro">
+            <video autoplay muted loop id="myVideo">
+                <source src="Aries_Etiqueta_hz.m4v" type="video/mp4">
+            </video>
+            <div class="myVideo__cortinilla">
+            </div>
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-md-6" style="margin-top: 15rem;">
+                            <p id="saludoUsuario" class="intro__titulo">
+                                Cerveceria Aries
+                            </p>
+                            <p class="intro__parrafo"> <img src="img/corte-01.png" alt="Aries Cerveceria"> <br>Nos
+                                encanta hacer la cerveza más
+                                rica, ser innovadores y
+                                creativos!</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <!--  Fin Baner principal -->
+    <!--  Amargor -->
+    <section id="data">
+        <div class="container">
+            <div class="row">
+                <div class="bordes mt-n5 heigth-300 shadow" style="z-index: 5;">
+                    <div class="col-md-6 col-lg-6 col-sm-12 float-left">
+                        <h5 class="text-left textoArvo">Queremos ayudarte en tu elección !</h5>
+                        <p class="lead text-left">¿Del 1 al 10 que tan amarga te gusta la cerveza? </p>
+                        <p class="lead text-left"> <img src="img/rayo-01.png" /> 1 Es lo mas ligero y <br>
+                            <img src="img/rayo-01.png" /> 10 Es lo mas amargo!
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-12 float-left  text-center mx-auto align-items-center">
+                        <p><span id="value" class="texto-value"></span></p>
+                        <hr class="my-4 no-padding">
+                        <div class="range text-center">
+                            <div class="sliderValue">
+                                <span>100</span>
+                            </div>
+                            <div class="field">
+                                <div class="value left">
+                                    1</div>
+                                <input id="points" type="range" value="1" min="1" max="10" steps="1">
+                                <div class="value right">
+                                    10</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-sm-12  text-center mx-auto box-model colorone bordercolor "> <img
+                        src="img/iconoCompra-01.png" class="imgIcono">
+                    <p>Envios gratis a Córdoba.
+                    </p>
+                </div>
+                <div class="col-md-6 col-lg-4 col-sm-12  text-center mx-auto box-model colorone bordercolor ">
+                    <img src="img/iconoCompra-02.png" class="imgIcono">
+                    <p>Conoce nuestras ofertas semanales!
+                    </p>
+                </div>
+                <div class="col-md-6 col-lg-4 col-sm-12  text-center mx-auto box-model colorone ">
+                    <img src="img/iconoCompra-03.png" class="imgIcono">
+                    <p>Aceptamos todos los medios de pago.
+                    </p>
+                </div>
+            </div>
+    </section>
+    <!--  Fin Amargor -->
+
+    <!--  Las mas vendidas de la semana -->
+    <section id="novedades">
+        <h1 class="novedades__titulo">Las más vendidas!</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12 text-center mx-auto">
+
+                    <button class="button" id="mostrar"><img src="img/star-01.png" width=80px /><span>Hacé click y
+                            Descubrí nuestras cervezas de la semana </span></button>
+                </div>
+                <!-- imagen 1 -->
+                <div class="col-md-6 col-lg-4 col-sm-12  text-center mx-auto showDemo ">
+                    <div class="contenedor">
+                        <img src="img/01.gif" alt="Aries Cerveza" height="400px" alt="Aries Cerveceria" />
+                        <img class="top" src="img/01.png" alt="Aries Cerveza" height="400px" alt="Aries Cerveceria" />
+                    </div>
+                    <p class="datos"> <img src="img/rayo-01.png" /> Munich Dunkel <img src="img/rayo-01.png"
+                            alt="Aries Cerveceria" /><br>$155</p>
+                </div>
+                <!-- imagen 2 -->
+                <div class="col-md-6  col-lg-4 col-sm-12  text-center mx-auto showDemo ocultar">
+                    <div class="contenedor">
+                        <img src="img/02.gif" height="400px" class="img-center" alt="Aries Cerveceria" />
+                        <img class="top" src="img/02.png" height="400px" alt="Aries Cerveceria" />
+                    </div>
+                    <p class="datos"><img src="img/rayo-01.png" /> Marzen <img src="img/rayo-01.png"
+                            alt="Aries Cerveceria" /><br>$143</p>
+                </div>
+                <!-- imagen 3 -->
+                <div class="col-md-6 text-center mx-auto col-lg-4 col-sm-12 showDemo">
+                    <div class="contenedor text-center mx-auto">
+                        <img class="" src="img/03.gif" alt="" height="400px" alt="Aries Cerveceria" />
+                        <img class="top" src="img/03.png" height="400px" alt="Aries Cerveceria" />
+                    </div>
+                    <p class="datos"> <img src="img/rayo-01.png" /> Honey Beer <img src="img/rayo-01.png"
+                            alt="Aries Cerveceria" /><br>$300</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+    </section>
+    <!--  Fin Las mas vendidas -->
+    <!--  Somos -->
+    <section id="somos">
+        <div class="containersomos">
+            <div class="somos1">
+                <h1>Aries <img src="img/corte-01.png" alt="Aries Cerveceria" class="imgclase"></h1>
+
+                <P><strong>ARIES Cerveceria</strong> nace como microcervecería en el mes de febrero de 2019.
+                    En meses da sus primeros pasos en la ciudad de
+                    San Francisco,
+                    Córdoba.
+                    Con la visión y el rumbo
+                    fijado en brindar a sus clientes la experiencia del verdadero placer de beber cerveza de
+                    calidad,
+                    ARIES continúa en constante expansión, tanto en su oferta de productos como en su alcance
+                    territorial.
+                </P>
+            </div>
+            <div class="somos2">
+                <h3>Descubrí nuevas cervezas con cada entrega.</h3>
+            </div>
+        </div>
+    </section>
+    <!--  Fin Somos -->
+
+
+    <!--  Footer-->
+    <footer>
+        <div class="flexpie">
+            <div class="PieUno div1 ">
+                <div class="container_texto">
+                    <h2>ARIES Cerveza Artesanal</h2>
+                    <p><a href="https://g.page/aries_cerveza?share" target=" blanck">J. Hernández 4020
+                            X2400 San Francisco, Córdoba.</a></p>
+                    <P><a href="mailto:cuenta@deemail.com"> mauribarbero.aries@gmail.com.</a>
+                    </P>
+                    <p>Cel 3564 593381</p>
+                </div>
+                <div class="redes">
+                    <a href="https://www.facebook.com/" target="blanck"><img src="img/facebook.svg" alt="facebook aries"
+                            class="icon-fb mx-auto"></a>
+                    <a href="https://www.instagram.com/" target="blanck"><img src="img/instagram.svg"
+                            alt="instagram aries" class="icon-fb mx-auto"></a>
+                    <a href="https://www.youtube.com/" target="blanck"><img src="img/youtube.svg" alt="Youtube aries"
+                            class="icon-fb mx-auto"></a>
+                </div>
+            </div>
+            <div class="PieUno div2">
+                <div class="container_texto">
+                    <h2>ARIES Fábrica</h2>
+                    <P>
+                        Te invitamos a pasar por nuestra microcervecería y degustar nuestras birras y las más locas
+                        creaciones.
+                    </P>
+                    <div class="novedades_button mx-auto"><a href="https://g.page/aries_cerveza?share" target=" blanck">
+                            ¿Cómo llegar?</a></div>
+                </div>
+            </div>
+        </div>
+        <a href="index.html"> <img src="img/LogoAriesBlanco.png" alt="Logo Aries" class="text-center mx-auto"> </a>
+    </footer>
+    <!--  Fin Footer-->
+
+    <a href="#" class="scrolltop"></a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+        integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="jquery/appIngreso.js"></script>
+    <script src="jquery/appWhatsapp.js"></script>
+    <script src="jquery/animaciones.js"></script>
+
+
+
+</body>
+
+</html>

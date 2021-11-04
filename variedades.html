@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aries | Tu cerveza</title>
+    <meta name="description"
+        content="Te presentamos nuestras cervezas Aries clásicas, especiales, rotativas y de guarda.">
+    <meta name="keywords"
+        content=" Cervecería, Cervecería artesanal, cervezas artesanales, venta de cerveza, ippa, honney, Cerveza, artesanal, córdoba, aries, argentina, pedidos whatsapp">
+    <link rel="stylesheet" href="css/stye.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="styles.css">
+    <LINK rel="stylesheet" href="CSS/formWhatsapp.css">
+
+
+    <script src="https://kit.fontawesome.com/db27027f19.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="shortcut icon" href="ico.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="ico.ico">
+</head>
+
+<body>
+    <!-- Comienzo Menu -->
+    <header class="header">
+        <nav class="flexmenus">
+            <div>
+                <a href="index.html"> <img src="img/LogoAriesIngreso.png" alt="LogoAries" class="logo"></a>
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="bar-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="nav-menu">
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="variedades.html" class="activo">Comprá tu cerveza!</a></li>
+                <li> <a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Comienzo Menu -->
+    <!-- Comienzo Banner -->
+    <div id="variedades">
+        <div class="contenedor" style="background-color: #02221b;">
+            <div class="Banner text-center" style="padding-top: 50px;"><img src="img/banner_pedidos.png"
+                    alt="Aries Cerveceria" class="animate__animated animate__pulse img-center"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h1 class="tituloVariedades">Hacé tu Compra</h1>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <select id="selecColor" class="form-control">
+                                <option value="all">Ver todas!</option>
+                                <option value="Rubia">Rubia</option>
+                                <option value="Roja">Roja</option>
+                                <option value="Negra">Negra</option>
+                            </select>
+                            <div class="select-icon">
+                                <img src="img/eye_Mesa de trabajo 1.png" width="25" height="">
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Final Banner -->
+    <!-- Comienzo Variedades -->
+    <section id="variedades">
+        <div class="container">
+            <div class="row">
+
+                <main id="contenedor-productos" class="col-sm-12">
+                    <!--  <div class="producto">
+                <div class="card">
+                    <div class="card-imagen"><img class="imagen" src="img/aries_01.png"></div>
+                    <div class="card-title">
+                        <h2>Munich Dunkel</h2>
+                        <h3>Precio:$300</h3>
+                    </div>
+                    <div class="card-content">
+                        <p class="titu">Caracteristicas <img src="img/corte-01.png" alt="Aries Cerveceria" width="20%">
+                        </p>
+                        <p>Color: Frutas tropicales.</p>
+                        <p class="bgclaro"> Sabor: Cítrico.</p>
+                        <p> Amargor: Medio alto 35Ibus</p>
+                        <p class="bgclaro"> Alcohol: 5%</p>
+                    </div>
+
+                    <a class="botonseleccion"> <img src="img/compra-01.svg" alt="Carrito" width=""> Agregar
+                        al
+                        carrito</a>
+
+                </div>
+
+
+
+            </div>-->
+                </main>
+
+
+            </div>
+        </div>
+
+    </section>
+    <!-- Final Variedades -->
+    <!-- Comienzo Listado de compra -->
+    <section id="crearcompra">
+
+        <div class="container">
+            <div class="row">
+                <aside class="col-sm-12">
+                    <div class="modalModificado producto">
+                        <h2>Tu lista de compra</h2>
+
+                        <div id="carrito-contenedor">
+                            <!-- <div class="productoEnCarrito">
+            <p>cerveza</p>
+            <p>Precio: $1200</p>
+            <button class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
+        </div> -->
+                        </div>
+
+                        <p class="precioProducto">Precio total: $<span id="precioTotal"></span></p>
+                    </div>
+
+                    <button class="btn btn-success ml-auto comprarButton" type="submit" data-toggle="modal"
+                        data-target="#comprarModal">Enviar Pedido</button>
+
+
+
+                </aside>
+            </div>
+        </div>
+
+    </section>
+    <!-- Comienzo Listado de compra -->
+    <!-- START MODAL COMPRA -->
+
+    <div class="modal fade " id="comprarModal" tabindex="-1" style="background-color: #02221b;">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="col-md-12 ">
+                    <div class="">
+                        <div id="formintro">
+                            <h2
+                                style="border-bottom: 1px #027a30 solid; text-align: center; color: #027a30; padding-bottom:15px;">
+                                Envio de
+                                compra!</h2>
+                            <form action="">
+                                <div class="form-group mb-3">
+                                    <label class="label" for="name">Tu nombre:</label>
+                                    <input type="text" class="form-control" id="NombreWhatapp"
+                                        placeholder="Ingresa tu nombre:" required style="color: #027a30;">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label class="label" for="name">Tu numero de celular:</label>
+                                    <input type="tel" class="form-control" id="celularWhatsapp"
+                                        placeholder="Ingresa tu numero de celular" required style="color: #027a30;">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label class="label" for="name">Forma de pago:</label>
+                                    <select id="tipopagoWhatapp" class="form-control" data-toggle="dropdown" required
+                                        style="text-align: left;  padding-top: 5px;">
+                                        <option value="">Ver Tipo de pago</option>
+                                        <option value="Efectivo">Efectivo</option>
+                                        <option value="Credito">Tarjeta de credito</option>
+                                        <option value="Debito">Tarjeta de debito</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <button id="submit" type="submit" class="boton"><i class="fab fa-whatsapp"></i>
+                                        Enviar Pedido</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MODAL COMPRA -->
+    <a href="#crearcompra" id="boton-carrito" class="botonCarritoCompra"> <img src="img/compra-01.svg">
+        <span id="contadorCarrito">
+            0</span> </a>
+    <!-- Comienzo Footer -->
+    <footer>
+        <div class="flexpie">
+            <div class="PieUno div1 ">
+                <div class="container_texto">
+                    <h2>ARIES Cerveza Artesanal</h2>
+                    <p><a href="https://g.page/aries_cerveza?share" target=" blanck">J. Hernández 4020
+                            X2400 San Francisco, Córdoba.</a></p>
+                    <P><a href="mailto:cuenta@deemail.com"> mauribarbero.aries@gmail.com.</a>
+                    </P>
+                    <p>Cel 3564 593381</p>
+                </div>
+                <div class="redes">
+                    <a href="https://www.facebook.com/" target="blanck"><img src="img/facebook.svg" alt="facebook aries"
+                            class="icon-fb mx-auto"></a>
+                    <a href="https://www.instagram.com/" target="blanck"><img src="img/instagram.svg"
+                            alt="instagram aries" class="icon-fb mx-auto"></a>
+                    <a href="https://www.youtube.com/" target="blanck"><img src="img/youtube.svg" alt="Youtube aries"
+                            class="icon-fb mx-auto"></a>
+                </div>
+            </div>
+            <div class="PieUno div2">
+                <div class="container_texto">
+                    <h2>ARIES Fábrica</h2>
+                    <P>
+                        Te invitamos a pasar por nuestra microcervecería y degustar nuestras birras y las más locas
+                        creaciones.
+                    </P>
+                    <div class="novedades_button mx-auto"><a href="https://g.page/aries_cerveza?share" target=" blanck">
+                            ¿Cómo llegar?</a></div>
+                </div>
+            </div>
+        </div>
+        <a href="index.html"> <img src="img/LogoAriesBlanco.png" alt="Logo Aries" class="text-center mx-auto"> </a>
+    </footer>
+    <!-- Comienzo Footer -->
+
+    <a href="#" class="scrolltop"></a>
+    <script src="js/stock.js"></script>
+    <script src="js/appcarrito.js"></script>
+
+    <script src="jquery/animaciones.js">
+    </script>
+
+</body>
+
+</html>
